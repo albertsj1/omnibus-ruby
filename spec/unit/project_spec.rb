@@ -115,7 +115,7 @@ module Omnibus
       context 'when on RHEL' do
         let(:fauxhai_options) { { platform: 'redhat', version: '6.4' } }
         it 'should return a RHEL iteration' do
-          expect(project.iteration).to eq('1.el6')
+          expect(project.iteration).to eq('1')
         end
       end
 
@@ -129,7 +129,7 @@ module Omnibus
       context 'when on FreeBSD' do
         let(:fauxhai_options) { { platform: 'freebsd', version: '9.1' } }
         it 'should return a FreeBSD iteration' do
-          expect(project.iteration).to eq('1.freebsd.9.amd64')
+          expect(project.iteration).to eq('1.amd64')
         end
       end
 
@@ -137,7 +137,7 @@ module Omnibus
         let(:fauxhai_options) { { platform: 'windows', version: '2008R2' } }
         before { stub_const('File::ALT_SEPARATOR', '\\') }
         it 'should return a Windows iteration' do
-          expect(project.iteration).to eq('1.windows')
+          expect(project.iteration).to eq('1')
         end
       end
 
