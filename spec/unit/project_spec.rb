@@ -129,7 +129,7 @@ module Omnibus
       context 'when on FreeBSD' do
         let(:fauxhai_options) { { platform: 'freebsd', version: '9.1' } }
         it 'should return a FreeBSD iteration' do
-          expect(project.iteration).to eq('1.amd64')
+          expect(project.iteration).to eq('1')
         end
       end
 
