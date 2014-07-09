@@ -890,7 +890,7 @@ module Omnibus
         "iteration (DSL). Please use build_iteration instead."
       end
 
-      "#{build_iteration}"
+      build_iteration
     end
 
     #
