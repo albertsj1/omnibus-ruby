@@ -16,6 +16,7 @@
 
 require 'pathname'
 require 'json'
+require 'net/ftp'
 
 require 'omnibus/exceptions'
 require 'omnibus/version'
